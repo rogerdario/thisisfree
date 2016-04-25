@@ -15,26 +15,33 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	font-family: 'AvenirLTStd-Heavy';
 	src: url('../fonts/30F762_0_0.eot');
 	src: url('../fonts/30F762_0_0.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/30F762_0_0.woff2') format('woff2'),
-	url('../fonts/30F762_0_0.woff') format('woff'),
-	url('../fonts/30F762_0_0.ttf') format('truetype');
+	     url('../fonts/30F762_0_0.woff2') format('woff2'),
+	     url('../fonts/30F762_0_0.woff') format('woff'),
+	     url('../fonts/30F762_0_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
 }
   
 @font-face {
 	font-family: 'AvenirLTStd-BookOblique';
 	src: url('../fonts/30F762_1_0.eot');
 	src: url('../fonts/30F762_1_0.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/30F762_1_0.woff2') format('woff2'),
-	url('../fonts/30F762_1_0.woff') format('woff'),
-	url('../fonts/30F762_1_0.ttf') format('truetype');
+	     url('../fonts/30F762_1_0.woff2') format('woff2'),
+	     url('../fonts/30F762_1_0.woff') format('woff'),
+	     url('../fonts/30F762_1_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirLTStd-Book';
 	src: url('../fonts/30F762_2_0.eot');
 	src: url('../fonts/30F762_2_0.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/30F762_2_0.woff2') format('woff2'),url('webfonts/30F762_2_0.woff') format('woff'),
-	url('../fonts/30F762_2_0.ttf') format('truetype');
+	     url('../fonts/30F762_2_0.woff2') format('woff2'),
+	     url('webfonts/30F762_2_0.woff') format('woff'),
+	     url('../fonts/30F762_2_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
 }
 
 /* GLOBAL */
@@ -57,7 +64,7 @@ img {
 a, a:visited {
 	font-size: 1.125rem;
 	color: #111;
-	font-weight: 700;
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	text-decoration: none;
 	display: inline-block;
 }
@@ -182,9 +189,9 @@ header div.header-text {
 }
 
 header div.header-text h1 {
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	font-size: 4.5rem;
 	line-height: 5rem;
-	font-weight: 700;
 }
 
 header div.header-text p {
@@ -255,6 +262,7 @@ div.module-text p.subtitle {
 }
 
 div.module-text h1.headline {
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	font-size: 2.25rem;
 	line-height: 3rem;
 	font-weight: 700;
