@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #111;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Camera_Icon" data-name="Camera Icon" class="cls-1" d="M2168,2598v-5h-11v5h-7v15h25v-15h-7Zm-5.5,12.5a5,5,0,1,1,5-5A5,5,0,0,1,2162.5,2610.5Z" transform="translate(-2150 -2593)"/>
+</svg>
