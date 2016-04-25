@@ -7,9 +7,40 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* TYPOGRAPHY */
+
+@import url("//hello.myfonts.net/count/30f762");
+  
+@font-face {
+	font-family: 'AvenirLTStd-Heavy';
+	src: url('../fonts/30F762_0_0.eot');
+	src: url('../fonts/30F762_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/30F762_0_0.woff2') format('woff2'),
+	url('../fonts/30F762_0_0.woff') format('woff'),
+	url('../fonts/30F762_0_0.ttf') format('truetype');
+}
+  
+@font-face {
+	font-family: 'AvenirLTStd-BookOblique';
+	src: url('../fonts/30F762_1_0.eot');
+	src: url('../fonts/30F762_1_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/30F762_1_0.woff2') format('woff2'),
+	url('../fonts/30F762_1_0.woff') format('woff'),
+	url('../fonts/30F762_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AvenirLTStd-Book';
+	src: url('../fonts/30F762_2_0.eot');
+	src: url('../fonts/30F762_2_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/30F762_2_0.woff2') format('woff2'),url('webfonts/30F762_2_0.woff') format('woff'),
+	url('../fonts/30F762_2_0.ttf') format('truetype');
+}
+
 /* GLOBAL */
+
 * {
-	font-family: "AvenirLTStd-Roman", "Helvetica", sans-serif;
+	font-family: "AvenirLTStd-Book", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 2rem;
 	color: #111;
