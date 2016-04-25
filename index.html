@@ -2,16 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We produce social, digital, and experiential culture at scale with our community of creators and leading brands.">
+	<meta property="og:title" content="Free">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://thisisfr.ee">
+	<meta property="og:description" content="OWe produce social, digital, and experiential culture at scale with our community of creators and leading brands.">
+	<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
 	<title>This is Free</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </head>
 <body>
 
 	<!-- BRAND -->
 
 	<div class="brand clearfix">
-		<a href="index.html"><img src="./img/global/free-logo.svg" alt="Free" width="50" height="50"></a>
-		<a href="http://thecreatorclass.com/" target="_blank"><img src="./img/global/tcc-logo.svg" alt="#TheCreatorClass" width="50" height="50"></a>
+		<span class="logo">
+			<a href="index.html"><img src="./img/global/free-logo.svg" alt="Free" width="50" height="50"></a>
+		</span>
+		<span class="logo">
+			<a href="http://thecreatorclass.com/" target="_blank"><img src="./img/global/tcc-logo.svg" alt="#TheCreatorClass" width="50" height="50"></a>
+		</span>
 		<div class="hashtags">
 			<p>#thecreatorclass</p>
 			<p>#thisisfree</p>
@@ -20,20 +34,20 @@
 
 	<!-- MENU -->
 
-	<div class="page-title clearfix">
-		<p>Home.</p>
-	</div>
+	<div class="page-title clearfix">Home.</div>
 
 	<div class="menu clearfix">
 		<a href="#" class="menu-icon menu-bar"></a>
 	</div>
+
+	<div class="top-fade"></div>
 
 	<!-- HEADER -->
 
 	<header class="clearfix">
 		<div class="header-text">
 			<h1>This is free.</h1>
-			<p>We’re a Creator Studio. We produce content and experience-driven culture with our community of Creators and leading Brands.</p>
+			<p>We produce social, digital, and experiential culture at scale with our community of creators and leading brands.</p>
 			<a href="#for-creators">For Creators</a> <span class="slash">/</span> <a href="#for-brands">For Brands</a>
 		</div>
 		<div class="scroll-down">
@@ -41,37 +55,44 @@
 		</div>
 		<div class="hero">
 			<img src="./img/home/hero.jpg" alt="">
-			<!-- <div class="img-meta">
-				<img src="./img/global/icon-meta-subject.svg" alt="" width="20" height="25">
-				<div class="img-meta-text">
-					<p>@soteeoh</p>
-				</div>
-			<div class="img-meta">
-				<img src="./img/global/icon-meta-photographer.svg" alt="" width="25" height="20">
-				<div class="img-meta-text">
-					<p>@leoorwild</p>
-				</div>
-			</div>	 -->
 		</div>
 	</header>
 
 	<!-- FOR CREATORS -->
 
-	<section class="creators" id="for-creators">
-		<div class="module-wrapper">
-			<div class="module-text module-creators">
+	<section class="creators clearfix" id="for-creators">
+		<div class="flex-wrapper flex-wrapper-right">
+			<div class="flex-text flex-text-creators">
 				<p class="subtitle">Free for Creators</p>
 				<h1 class="headline">Designed for #TheCreatorClass</h1>
 				<p>We empower photographers, filmmakers and cultural leaders with education, audience, resources and commercial opportunities so they can build a career doing what they love.</p>
 				<button class="cta"><a href="">Learn more</a></button>
 				<button class="cta cta-container"><a href="">Join us</a></button>
-
 			</div>
-			<div class="module-img">
-				<img src="./img/home/for-creators-duo.jpg" alt="">
+			<div class="flex-img">
+				<img src="./img/home/for-creators-duo.jpg" alt="Free of Creators">
 			</div>
 		</div>
 	</section>
+
+	<!-- FOR BRANDS -->
+
+	<section class="brands clearfix" id="for-brands">
+		<div class="flex-wrapper flex-wrapper-left">
+			<div class="flex-img">
+				<img src="./img/home/for-brands-duo.jpg" alt="Free for Brands">
+			</div>
+			<div class="flex-text flex-text-brands">
+				<p class="subtitle">Free for Brands</p>
+				<h1 class="headline">Optimized for Millennial Brands.</h1>
+				<p>We help progressive brands lead culture by creating content and experiences with the new leading voices of our multiplatform mediascape.</p>
+				<button class="cta"><a href="">Learn more</a></button>
+				<button class="cta cta-container"><a href="">Contact us</a></button>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
 	
 </body>
 </html>
