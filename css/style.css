@@ -327,6 +327,23 @@ div.flex-img img {
 	flex-shrink: 0;
 	min-width: 880px;
 	max-height: 100%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    mix-blend-mode: screen;
+}
+
+div.flex-img img:hover {
+	-webkit-filter: none;
+	filter: none;
+	mix-blend-mode: normal;
+}
+
+div.flex-img-creators {
+    background: #b8b3a8;
+}
+
+div.flex-img-brands {
+    background: #9cb0a1;
 }
 
 div.flex-text {
