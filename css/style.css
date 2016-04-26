@@ -618,10 +618,12 @@ div.footer-social img.social {
 
 	div.menu-btn {
 		position: fixed;
-		top: 20px;
+		top: 15px;
+		right: 15px;
+		height: 40px;
 	}
 
-	div.menu-btn a.menu-icon {
+	div.menu-btn span.menu-icon {
 	    width: 40px;
 	}
 
