@@ -1,0 +1,12 @@
+/* HEADER */
+
+header div.header-text {
+	margin: 0 auto;
+	width: 60%;
+	padding: 180px 0 5% 0;
+}
+
+header div.hero-sub {
+	width: 80%;
+	margin: 0 auto;
+}
