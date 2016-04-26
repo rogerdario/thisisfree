@@ -61,6 +61,9 @@
 	width: 100%;
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
 	font-size: 4.5rem;
 	line-height: 5rem;
 	color: #fff;

@@ -25,8 +25,9 @@ header div.hero-sub img {
 	max-height: 100%;
 }
 
-/* LINKS / BUTTONS */
-
+p.join-us-btn {
+	margin-top: 40px;
+}
 
 /* MODULE - GLOBAL */
 
@@ -389,7 +390,7 @@ div.flex-text-sub-5 p {
 
 	header div.header-text-sub {
 		width: 100%;
-		padding: 20% 30px 30% 10px;
+		padding: 20% 30px 30% 120px;
 	}
 
 	header div.hero-sub {
