@@ -1,0 +1,106 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(1,1,1,0.98);
+	z-index: 20;
+	padding-top: 90px;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/global/menu-close.svg) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+.overlay-close:hover {
+	opacity: 0.5;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+/* Menu style */
+.overlay nav {
+	position: relative;
+	height: 60%;
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+}
+
+.overlay ul li a {
+	border: none;
+	padding: 15px 0 15px 80px;
+	width: 100%;
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 4.5rem;
+	line-height: 5rem;
+	color: #fff;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	border: none;
+	color: #111;
+	background: #fff;
+}
+
+/* Effects */
+.overlay-slidedown {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.25s ease-in, visibility 0s 0.25s;
+	transition: opacity 0.25s ease-in, visibility 0s 0.25s;
+}
+
+.overlay-slidedown.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 640px) {
+	.overlay ul li a {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		padding: 20px 0 20px 20px;
+	}
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		n-height: 34px;
+	}
+}

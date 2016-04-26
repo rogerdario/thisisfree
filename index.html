@@ -13,9 +13,33 @@
 	<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
 	<title>This is Free</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
+
+	<!-- MENU -->
+	<div class="overlay overlay-slidedown">
+		<button type="button" class="overlay-close">Close</button>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="/creators">For Creators</a></li>
+				<li><a href="/brands">For Brands</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/jobs">Jobs</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="page-title clearfix">Home.</div>
+
+	<div class="menu-btn clearfix" id="trigger-overlay">
+		<span class="menu-icon menu-bar"></span>
+	</div>
+
+	<div class="top-fade"></div>
 
 	<!-- BRAND -->
 
@@ -32,16 +56,6 @@
 		</div>
 	</div>
 
-	<!-- MENU -->
-
-	<div class="page-title clearfix">Home.</div>
-
-	<div class="menu clearfix">
-		<a href="#" class="menu-icon menu-bar"></a>
-	</div>
-
-	<div class="top-fade"></div>
-
 	<!-- HEADER -->
 
 	<header class="clearfix">
@@ -51,7 +65,7 @@
 			<a href="#for-creators">For Creators</a> <span class="slash">/</span> <a href="#for-brands">For Brands</a>
 		</div>
 		<div class="scroll-down">
-			<img src="./img/home/down-arrow.svg" alt="">
+			<img src="./img/home/down-arrow.svg" alt="Scroll down">
 		</div>
 		<div class="hero">
 			<img src="./img/home/hero.jpg" alt="">
@@ -94,6 +108,10 @@
 
 	<!-- FOOTER -->
 
+			<div class="to-top">
+			<a href="#" class="to-top"><img src="./img/footer/to-top.svg" alt="Scroll up to top"></a>
+		</div>
+
 	<footer class="clearfix">
 		<div class="footer-wrapper">
 			<div class="footer-map">
@@ -105,22 +123,47 @@
 					<p class="footer-subtitle">A Creator Studio for #TheCreatorClass.</p>
 				</div>
 				<div class="footer-col">
-					<p>300 – 68 Claremont St</p>
-					<p>Toronto, ON M6J 2M5</p>
+					<span>300 – 68 Claremont St</span>
+					<span>Toronto, ON M6J 2M5</span>
 				</div>
 				<div class="footer-col">
-					<p><a href="mailto:studio@thisisfr.ee">studio@thisisfr.ee</a></p>
-					<p><a href="/jobs">Jobs</a> / <a href="/contact">Contact</a> / <a href="/privacy">Privacy</a></p>
+					<span><a href="mailto:studio@thisisfr.ee">studio@thisisfr.ee</a></span>
+					<span><a href="/contact">Contact</a> / <a href="/jobs">Jobs</a> / <a href="/privacy">Privacy</a></span>
 				</div>
 				<div class="footer-social">
-					<img src="./img/footer/ig.svg" alt="Instagram" class="social">
-					<img src="./img/footer/fb.svg" alt="Facebook" class="social">
-					<img src="./img/footer/tw.svg" alt="Twitter" class="social">
-					<img src="./img/footer/li.svg" alt="LinkedIn" class="social">
+					<a href="https://www.instagram.com/thisisfreeagency/" target="_blank"><img src="./img/footer/ig.svg" alt="Instagram" class="social"></a>
+					<a href="" target="_blank"><img src="./img/footer/fb.svg" alt="Facebook" class="social"></a>
+					<a href="https://twitter.com/wearefreeagency" target="_blank"><img src="./img/footer/tw.svg" alt="Twitter" class="social"></a>
+					<a href="https://www.linkedin.com/company/free-agency-social-content-studio" target="_blank"><img src="./img/footer/li.svg" alt="LinkedIn" class="social"></a>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<!-- JS -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.to-top').fadeIn();
+				} else {
+					$('.to-top').fadeOut();
+				}
+			});
+
+			$('.to-top').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+
+		});
+	</script>
+
+	<script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
 	
 </body>
 </html>

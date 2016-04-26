@@ -14,7 +14,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	font-size: 16px;
 	line-height: 1.8rem;
 	font-variant-ligatures: common-ligatures;
-    text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;`
 	color: #111;
 }
 
@@ -59,6 +59,10 @@ img {
 a, a:visited {
 	color: #111;
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
 	text-decoration: none;
 	display: inline-block;
 	border-bottom: 2px solid transparent;
@@ -142,35 +146,40 @@ div.page-title {
 	z-index: 10;
 }
 
-
-div.menu {
+div.menu-btn {
 	position: fixed;
-	top: 30px;
+	top: 20px;
 	right: 20px;
-	height: 30px;
+	height: 50px;
 	z-index: 10;
+	display: flex;
+	align-items: center;
 }
 
-div.menu a:hover {
-	opacity: 0.5;
+div.menu-btn:hover {
+	cursor: pointer;
 }
 
-div.menu a.menu-icon {
+div.menu-btn span.menu-icon {
     position:relative;
     display:inline-block;
     width: 50px;
 }
+
+div.menu-btn span.menu-icon:hover {
+	height: 35px;
+}
  
-div.menu a.menu-bar {
+div.menu-btn span.menu-bar {
     height: 30px;
     border-top: 2px solid #111;
     border-bottom: 2px solid #111;
 }
  
-div.menu a.menu-bar:before {
+div.menu-btn span.menu-bar:before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 50%;
     width: 100%;
     border-top: 2px solid #111;
 }
@@ -310,11 +319,35 @@ div.flex-text-brands {
 
 /* FOOTER */
 
+div.to-top {
+	position: relative;
+	width: 54px;
+	height: 27px;
+	display: flex;
+	float: right;
+	flex-direction: row-reverse;
+	margin: 0 20px 40px 0;
+}
+
+div.to-top img {
+	width: 100%;
+	height: 100%;
+}
+
+div.to-top a:hover {
+	border-bottom: none;
+	opacity: 0.5;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
 footer {
 	width: 100%;
 	height: 30vh;
 	min-height: 400px;
 	background: #d3d3d3;
+	clear: both;
 }
 
 div.footer-wrapper {
@@ -338,8 +371,12 @@ div.footer-map img {
 	height: 50px;
 }
 
+div.footer-map a {
+	border: none;
+}
+
 div.footer-map a:hover {
-	border-bottom: none;
+	border: none;
 	opacity: 0.5;
 	-webkit-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
@@ -361,7 +398,7 @@ div.footer-row {
 
 p.footer-title {
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
-	line-height: 1.2rem;
+	line-height: 1.5rem;
 }
 
 p.footer-subtitle {
@@ -375,37 +412,49 @@ div.footer-col {
 	flex: 1 0 280px;
 }
 
-div.footer-col p {
+div.footer-col span {
 	font-family: "AvenirLTStd-Book", "Helvetica", sans-serif;
-	line-height: 1rem;
+	line-height: 1.75rem;
+	display: block;
 }
 
-div.footer-col p a, div.footer-col p a:visited {
+div.footer-col span a, div.footer-col span a:visited {
 	font-family: "AvenirLTStd-Book", "Helvetica", sans-serif;
-	line-height: 1.2rem;
 	text-decoration: none;
-	padding-bottom: 2px;
 	border-bottom: 1px solid transparent;
+	display: inline;
 }
 
-div.footer-col p a:hover {
+div.footer-col span a:hover {
 	padding-bottom: 2px;
 	border-bottom: 1px solid #111;
 }
 
 div.footer-social {
-	width: 50%;
+	width: 45%;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+div.footer-social a {
+	border: none;
+}
+
+div.footer-social a:hover {
+	border: none;
+	border: none;
+	opacity: 0.5;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
 div.footer-social img.social {
 	max-width: 30px;
 	max-height: 30px;
 }
-
 
 /* RESPONSIVE */
 
@@ -479,6 +528,11 @@ div.footer-social img.social {
 }
 
 @media screen and (max-width: 640px) {
+	/* HEADER */
+	header div.header-text {
+		padding: 20% 30px 10% 30px;
+	}
+
 	/* MODULES */
 
 	div.flex-wrapper {
@@ -562,12 +616,12 @@ div.footer-social img.social {
 
 	/* NAV */
 
-	div.menu {
+	div.menu-btn {
 		position: fixed;
 		top: 20px;
 	}
 
-	div.menu a.menu-icon {
+	div.menu-btn a.menu-icon {
 	    width: 40px;
 	}
 
