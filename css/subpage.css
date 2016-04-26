@@ -99,7 +99,8 @@ section.main-sub {
 
 section.join-us {
 	background: #fff;
-	padding-bottom: 20%;
+	height: 100%;
+	margin-bottom: 7.5%;
 }
 
 div.flex-img {
@@ -477,5 +478,11 @@ div.flex-text-sub-5 p {
 	header div.header-text-sub {
 		width: 100%;
 		padding: 20% 30px 5% 30px;
+	}
+
+	/* MODULES */
+
+	section.join-us {
+		margin-bottom: 20%;
 	}
 }
