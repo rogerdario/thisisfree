@@ -518,11 +518,11 @@ div.flex-text-sub-9 {
 
 	div.flex-img {
 		flex: 1 0 100%;
-		max-height: 300px;
+		max-height: 320px;
 	}
 
 	div.flex-img img {
-		min-height: 300px;
+		min-height: 320px;
 		min-width: 600px;
 		margin: auto;
 	}
@@ -533,7 +533,7 @@ div.flex-text-sub-9 {
 	div.flex-text-sub-4,
 	div.flex-text-sub-5 {
 		flex: 1 0 100%;
-		padding: 30px;
+		padding: 60px;
 		min-height: 500px;
 		max-height: 100%;
 	}
@@ -585,9 +585,26 @@ div.flex-text-sub-9 {
 		margin: 0 auto;
 		margin-left: 0;
 		margin-right: 0;
+		min-height: 820px;
 	}
 
 	section.join-us {
 		margin-bottom: 20%;
+	}
+
+	div.flex-text-sub-1,
+	div.flex-text-sub-2,
+	div.flex-text-sub-3,
+	div.flex-text-sub-4,
+	div.flex-text-sub-5 {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	/* MODULES */
+
+	div.main-sub-wrapper {
+		min-height: 840px;
 	}
 }
