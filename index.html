@@ -110,9 +110,9 @@
 
 	<!-- FOOTER -->
 
-			<div class="to-top">
-			<a href="#" class="to-top"><img src="./img/footer/to-top.svg" alt="Scroll up to top"></a>
-		</div>
+	<div class="to-top">
+		<a href="#" class="to-top"><img src="./img/footer/to-top.svg" alt="Scroll up to top"></a>
+	</div>
 
 	<footer class="clearfix">
 		<div class="footer-wrapper">
@@ -177,6 +177,16 @@
 						return false;
 					}
 				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(window).scroll(function () {
+			var scrollTop = $(window).scrollTop();
+			var height = $(window).height();
+			$('.scroll-down').css({
+				'opacity': ((height - scrollTop) / height)
 			});
 		});
 	</script>

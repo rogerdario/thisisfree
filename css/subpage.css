@@ -44,9 +44,10 @@ ul.progress {
 }
 
 ul.progress li {
-	width: 18%;
+	width: 20%;
 	height: 2px;
 	display: inline-block;
+	margin-right: -4.5px;
 	background: rgba(1, 1, 1, 0.1);
 }
 
@@ -160,10 +161,11 @@ div.flex-text-sub-1 span a {
 }
 
 div.flex-text-sub-1 span a:hover {
-	opacity: 0.5;
-	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+	border: none;
+	transform: translateY(-10%);
+	-webkit-transition: transform .25s ease-in-out;
+	-moz-transition: transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
 }
 
 /* SECTION 2 */
@@ -276,7 +278,8 @@ ul.progress-reverse {
 
 ul.progress-reverse li {
 	display: inline-block;
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.2);
+	margin-
 }
 
 ul.progress-reverse li.selected {
@@ -303,7 +306,7 @@ div.flex-text-sub-5 p {
 	}
 
 	ul.progress li {
-		width: 15.25%;
+		width: 20%;
 	}
 
 	ul.progress-reverse {
@@ -312,7 +315,7 @@ div.flex-text-sub-5 p {
 	}
 
 	ul.progress-reverse li {
-		width: 15.25%;
+		width: 20%;
 	}
 }
 

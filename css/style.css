@@ -501,10 +501,10 @@ div.footer-social a {
 
 div.footer-social a:hover {
 	border: none;
-	opacity: 0.5;
-	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+	transform: translateY(-10%);
+	-webkit-transition: transform .25s ease-in-out;
+	-moz-transition: transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
 }
 
 div.footer-social img.social {
@@ -663,7 +663,7 @@ div.footer-social img.social {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), @media screen and (max-height:540px) {
 	/* BRAND */
 
 	div.brand {
@@ -755,7 +755,12 @@ div.footer-social img.social {
 	footer {
 		min-height: 640px;
 	}
-
+	
+	div.to-top {
+		width: 40px;
+		height: auto;
+		margin: 0 15px 40px 0;
+	}
 
 	div.footer-map {
 		flex: 1 0 100%;
