@@ -1,12 +1,150 @@
 /* HEADER */
 
-header div.header-text {
-	margin: 0 auto;
+header {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	background: linear-gradient(to top, #f1eee9 0%, #f1eee9 25%, #fff 25%, #fff 100%);
+}
+
+header div.header-text-sub {
 	width: 60%;
 	padding: 180px 0 5% 0;
 }
 
+header div.header-text-sub p {
+	padding-right: 200px;
+}
+
 header div.hero-sub {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
+}
+
+header div.hero-sub img {
+	max-height: 100%;
+}
+
+/* MAIN SECTION */
+
+section.main-sub {
+	background: #f1eee9;
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+	margin-bottom: 5%;
+}
+
+div.main-sub-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+div.flex-sub-wrapper {
+	margin: 0 auto;
+	width: 85%;
+}
+
+div.flex-text-sub-1 {
+	background: #fff;
+	flex: 1 0 50%;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.flex-text p.subtitle {
+	height: 100%;
+}
+
+ul.progress {
+	width: 200px;
+	height: 30px;
+	list-style-type: none;
+	padding: 0;
+	margin: 8px 0 0 0;
+}
+
+ul.progress li {
+	width: 18%;
+	height: 2px;
+	display: inline-block;
+	background: rgba(1, 1, 1, 0.1);
+}
+
+ul.progress li.selected {
+	background: #111;
+}
+
+div.flex-text h1.headline-sub {
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 2.75rem;
+	padding: 20% 0 10% 0;
+}
+
+div.flex-text p {
+}
+
+div.flex-img {
+    flex: 1 0 50%;
+}
+
+div.scroll-next {
+	display: flex;
+	height: 20px;
+}
+
+div.scroll-next a:hover {
+	border-bottom: none;
+	opacity: 0.5;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+	/* HEADER */
+	
+	header div.header-text-sub p {
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* HEADER */
+
+	header div.header-text-sub {
+		width: 100%;
+		padding: 20% 30px 30% 120px;
+	}
+
+	header div.hero-sub {
+		width: 100%;
+		padding-right: 0;
+		max-height: 600px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	/* HEADER */
+
+	header div.header-text-sub {
+		width: 100%;
+		padding: 26.5% 30px 10% 120px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* HEADER */
+
+	header div.header-text-sub {
+		width: 100%;
+		padding: 20% 30px 5% 30px;
+	}
 }
