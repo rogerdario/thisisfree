@@ -689,7 +689,7 @@ div.footer-social img.social {
 	}
 }
 
-@media screen and (max-width: 480px), @media screen and (max-height: 400px) {
+@media screen and (max-width: 480px), @media screen and (max-height: 300px) {
 	/* BRAND */
 
 	div.brand {
