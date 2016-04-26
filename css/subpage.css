@@ -56,8 +56,8 @@ ul.progress li.selected {
 div.flex-text h1.headline-sub {
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	font-weight: normal;
-	font-size: 1.5rem;
-	line-height: 2.25rem;
+	font-size: 1.4rem;
+	line-height: 2.2rem;
 	padding: 0;
 }
 
@@ -98,7 +98,7 @@ section.main-sub {
 
 section.join-us {
 	background: #fff;
-	padding-bottom: 5%;
+	padding-bottom: 20%;
 }
 
 div.flex-img {
@@ -282,7 +282,6 @@ ul.progress-reverse li.selected {
 }
 
 div.flex-text-sub-5 h1.headline-sub {
-
 	color: #fff;
 }
 
@@ -294,19 +293,24 @@ div.flex-text-sub-5 p {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1080px) {
+	/* MODULES */
+
 	ul.progress {
 		width: 80px;
 		height: 30px;
-		list-style-type: none;
-		padding: 0;
-		margin: 8px 0 0 0;
 	}
 
 	ul.progress li {
 		width: 15.25%;
-		height: 2px;
-		display: inline-block;
-		background: rgba(1, 1, 1, 0.1);
+	}
+
+	ul.progress-reverse {
+		width: 80px;
+		height: 30px;
+	}
+
+	ul.progress-reverse li {
+		width: 15.25%;
 	}
 }
 
@@ -317,18 +321,21 @@ div.flex-text-sub-5 p {
 		padding-right: 0;
 	}
 
-	/* SECTIONS */
+	/* MODULES */
 
 	div.flex-sub-wrapper-1 {
 		margin: 0 auto;
 		width: 100%;
 	}
 
-	div.flex-text-sub-1, div.flex-text-sub-3 {
-		padding: 40px 40px 0 90px;
+	div.flex-text-sub-1,
+	div.flex-text-sub-3,
+	div.flex-text-sub-5 {
+		padding: 40px 40px 0 80px;
 	}
 
-	div.flex-text-sub-2, div.flex-text-sub-4 {
+	div.flex-text-sub-2,
+	div.flex-text-sub-4 {
 		padding: 40px 30px 0 40px;
 	}
 
@@ -370,6 +377,11 @@ div.flex-text-sub-5 p {
 	div.flex-img-4 {
 		flex: 1 0 50%;
 	}
+
+	div.flex-sub-wrapper-5 {
+		margin: 0 auto;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -377,7 +389,7 @@ div.flex-text-sub-5 p {
 
 	header div.header-text-sub {
 		width: 100%;
-		padding: 20% 30px 30% 120px;
+		padding: 20% 30px 30% 10px;
 	}
 
 	header div.hero-sub {
@@ -386,8 +398,19 @@ div.flex-text-sub-5 p {
 		max-height: 600px;
 	}
 
+	/* MODULES */
+
 	div.flex-sub-wrapper {
 		max-height: 2400px;
+	}
+
+	div.flex-text-sub-1 span {
+		width: 100%;
+	}
+
+	div.flex-text-sub-1 span a img {
+		max-width: 35px;
+		max-height: 35px;
 	}
 }
 
@@ -397,6 +420,53 @@ div.flex-text-sub-5 p {
 	header div.header-text-sub {
 		width: 100%;
 		padding: 26.5% 30px 10% 120px;
+	}
+
+	/* MODULES */
+
+	section.main-sub {
+		padding-top: 10%;
+	}
+
+	div.flex-img {
+		flex: 1 0 100%;
+		min-height: 300px;
+	}
+
+	div.flex-text-sub-1,
+	div.flex-text-sub-2,
+	div.flex-text-sub-3,
+	div.flex-text-sub-4,
+	div.flex-text-sub-5 {
+		flex: 1 0 100%;
+		padding: 30px;
+		min-height: 500px;
+		max-height: 100%;
+	}
+
+	div.flex-text-sub-1,
+	div.flex-text-sub-3,
+	div.flex-text-sub-5 {
+		order: 2;
+	}
+
+	div.flex-img-1,
+	div.flex-img-3,
+	div.flex-img-5 {
+		order: 1;
+	}
+
+	div.flex-text h1.headline-sub {
+		width: 100%;
+	}
+
+	div.flex-text-sub-1 span {
+		width: 80%;
+	}
+
+	div.flex-text-sub-1 span a img {
+		max-width: 40px;
+		max-height: 40px;
 	}
 }
 

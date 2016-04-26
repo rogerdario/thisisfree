@@ -171,6 +171,7 @@ div.brand div.hashtags {
 div.brand div.hashtags p {
 	font-size: 0.75rem;
 	line-height: 0.25rem;
+	color: #111;
 }
 
 /* NAV */
@@ -344,8 +345,8 @@ div.flex-text p.subtitle {
 div.flex-text h1.headline {
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
 	font-weight: normal;
-	font-size: 1.5rem;
-	line-height: 2.25rem;
+	font-size: 1.4rem;
+	line-height: 2.2rem;
 	padding: 20% 0 10% 0;
 }
 
