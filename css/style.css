@@ -326,16 +326,20 @@ div.flex-img img {
 	display: flex;
 	flex-shrink: 0;
 	min-width: 880px;
-	max-height: 100%;
+	height: 100%;
+	max-height: 640px;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     mix-blend-mode: screen;
 }
 
-div.flex-img img:hover {
+div.flex-img img:hover, div.flex-img img:focus {
 	-webkit-filter: none;
 	filter: none;
 	mix-blend-mode: normal;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 
 div.flex-img-creators {
@@ -343,7 +347,7 @@ div.flex-img-creators {
 }
 
 div.flex-img-brands {
-    background: #9cb0a1;
+    background: #9eaea2;
 }
 
 div.flex-text {
@@ -418,7 +422,6 @@ div.to-top a:hover {
 
 footer {
 	width: 100%;
-	height: 30vh;
 	min-height: 400px;
 	background: #d3d3d3;
 	clear: both;
@@ -439,6 +442,8 @@ div.footer-map {
 	flex: 1 0 30%;
 	background: url('../img/footer/footer-map.png') no-repeat center;
 	background-size: cover;
+	max-height: 100%;
+	min-height: 400px;
 }
 
 div.footer-map img {
@@ -623,6 +628,10 @@ div.footer-social img.social {
 		padding-right: 80px;
 	}
 
+	header div.scroll-down {
+		display: none;
+	}
+
 	/* MODULES */
 
 	div.flex-wrapper {
@@ -741,10 +750,6 @@ div.footer-social img.social {
 
 	header div.hero img {
 		min-width: 600px;
-	}
-
-	header div.scroll-down {
-		display: none;
 	}
 
 	/* MODULES */
