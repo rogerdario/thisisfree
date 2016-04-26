@@ -347,7 +347,7 @@ div.flex-img-creators {
 }
 
 div.flex-img-brands {
-    background: #9eaea2;
+    background: #a4b4a8;
 }
 
 div.flex-text {
@@ -689,7 +689,7 @@ div.footer-social img.social {
 	}
 }
 
-@media screen and (max-width: 480px), @media screen and (max-height:540px) {
+@media screen and (max-width: 480px), @media screen and (max-height: 400px) {
 	/* BRAND */
 
 	div.brand {
