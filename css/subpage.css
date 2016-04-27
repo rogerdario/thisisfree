@@ -14,6 +14,13 @@ header.brands {
 	background: linear-gradient(to top, #e2ece5 0%, #e2ece5 30%, #fff 30%, #fff 100%);
 }
 
+header.creators {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	background: #fff;
+}
+
 header div.header-text-sub {
 	width: 60%;
 	padding: 180px 0 5% 0;
@@ -391,6 +398,35 @@ div.flex-text-sub-6 span img.horiz {
 div.flex-text-sub-7,
 div.flex-text-sub-9 {
 	background: #d6e2d9;
+}
+
+/* JOBS */
+
+p.intro {
+	line-height: 1rem;
+}
+
+span.underline {
+	display: inline-block;
+	line-height: 0.8rem;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #111;
+}
+
+p.intro-bold {
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	line-height: 1rem;
+}
+
+ul.chapters-jobs {
+	padding: 0;
+	margin: 0;
+}
+
+ul.chapters-jobs li {
+	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	font-weight: bold;
+	display: block;
 }
 
 /* RESPONSIVE */

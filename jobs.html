@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We produce social, digital, and experiential culture at scale with our community of creators and leading brands.">
+	<meta property="og:title" content="Free">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://thisisfr.ee">
+	<meta property="og:description" content="OWe produce social, digital, and experiential culture at scale with our community of creators and leading brands.">
+	<link rel="icon" type="image/png" href="./img/global/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./img/global/favicon-16x16.png" sizes="16x16" />
+	<title>This is Free / For Creators</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/subpage.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/modernizr.custom.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- MENU -->
+	<div class="overlay overlay-slidedown">
+		<button type="button" class="overlay-close">Close</button>
+		<nav>
+			<ul>
+				<li><a href="./index">Home</a></li>
+				<li><a href="./creators">For Creators</a></li>
+				<li><a href="./brands">For Brands</a></li>
+				<li><a href="./contact">Contact</a></li>
+				<li><a href="./jobs">Jobs</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="page-title clearfix">Jobs.</div>
+
+	<div class="menu-btn clearfix" id="trigger-overlay">
+		<span class="menu-icon menu-bar"></span>
+	</div>
+
+	<div class="top-bg"></div>
+
+	<!-- BRAND -->
+
+	<div class="brand clearfix">
+		<span class="logo">
+			<a href="/index"><img src="./img/global/free-logo.svg" alt="Free" width="50" height="50"></a>
+		</span>
+		<span class="logo">
+			<a href="http://thecreatorclass.com/" target="_blank"><img src="./img/global/tcc-logo.svg" alt="#TheCreatorClass" width="50" height="50"></a>
+		</span>
+		<div class="hashtags">
+			<p>#thecreatorclass</p>
+			<p>#thisisfree</p>
+		</div>
+	</div>
+
+	<!-- HEADER -->
+
+	<header class="jobs clearfix">
+		<div class="header-text header-text-sub">
+			<h1>Work at free.</h1>
+			<p>For employment consideration, please send to <a href="mailto:studio@thisisfr.ee">studio@thisisfr.ee</a>.</p>
+			<span class="underline">Or you can mail your information to:</span>
+			<p class="intro-bold">FREE</p>
+			<p class="intro">Human Resources Department</p>
+			<p class="intro">300 – 68 Claremont Street</p>
+			<p class="intro">Toronto, ON M6J 2M5</p>
+			<span class="underline">Job Postings</span>
+			<ul class="chapters-jobs">
+				<li>Partner Development</li>
+				<li>Partner Manager</li>
+				<li>Supervising Producer</li>
+				<li>Publishing Lead</li>
+				<li>Paid Media Coordinator</li>
+			</ul>
+		</div>
+		<div class="hero hero-sub">
+			<img src="./img/global/blank.gif" data-echo="./img/jobs/jobs-hero.jpg" alt="">
+		</div>
+	</header>
+
+	<!-- FOOTER -->
+
+	<div class="to-top">
+		<a href="#" class="to-top"><img src="./img/footer/to-top.svg" alt="Scroll up to top"></a>
+	</div>
+
+	<footer class="clearfix">
+		<div class="footer-wrapper">
+			<div class="footer-map">
+				<a href="https://goo.gl/maps/QpwQT8MD79q" target="_blank"><img src="./img/footer/free-pin.svg" alt="300 – 68 Claremont St, Toronto, ON M6J 2M5"></a>
+			</div>
+			<div class="footer-content">
+				<div class="footer-row">
+					<p class="footer-title">Free</p>
+					<p class="footer-subtitle">A Creator Studio for #TheCreatorClass.</p>
+				</div>
+				<div class="footer-col">
+					<span>300 – 68 Claremont St</span>
+					<span>Toronto, ON M6J 2M5</span>
+				</div>
+				<div class="footer-col">
+					<span><a href="mailto:studio@thisisfr.ee">studio@thisisfr.ee</a></span>
+					<span><a href="/contact">Contact</a> / <a href="/jobs">Jobs</a> / <a href="/privacy">Privacy</a></span>
+				</div>
+				<div class="footer-social">
+					<a href="https://www.instagram.com/thisisfreeagency/" target="_blank"><img src="./img/footer/ig.svg" alt="Instagram" class="social"></a>
+					<a href="" target="_blank"><img src="./img/footer/fb.svg" alt="Facebook" class="social"></a>
+					<a href="https://twitter.com/wearefreeagency" target="_blank"><img src="./img/footer/tw.svg" alt="Twitter" class="social"></a>
+					<a href="https://www.linkedin.com/company/free-agency-social-content-studio" target="_blank"><img src="./img/footer/li.svg" alt="LinkedIn" class="social"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.to-top').fadeIn();
+				} else {
+					$('.to-top').fadeOut();
+				}
+			});
+
+			$('.to-top').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+
+	<script src="js/classie.js" type="text/javascript"></script>
+	<script src="js/nav.js" type="text/javascript"></script>
+	<script src="js/echo.js" type="text/javascript"></script>
+	<script src="js/lazy.js" type="text/javascript"></script>
+	
+</body>
+</html>
