@@ -235,14 +235,14 @@ div.flex-text-sub-2 span {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 80%;
+	width: 100%;
 	height: 100%;
 }
 
 div.flex-text-sub-2 span img {
-	flex: 1 0 10%;
+	flex: 1 0 15%;
 	max-width: 70px;
-	margin: 5px;
+	padding: 10px;
 }
 
 div.flex-text-sub-9 span {
@@ -250,14 +250,14 @@ div.flex-text-sub-9 span {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 80%;
+	width: 100%;
 	height: 100%;
 }
 
 div.flex-text-sub-9 span img {
-	flex: 1 0 10%;
+	flex: 1 0 15%;
 	max-width: 70px;
-	margin: 5px;
+	padding: 10px;
 }
 
 /* SECTION 3 */
@@ -660,6 +660,19 @@ div.flex-text-sub-9 {
 		max-height: 40px;
 	}
 
+	div.flex-text-sub-2 span img {
+		flex: 1 0 10%;
+		max-width: 65px;
+		margin: 7px;
+	}
+
+	div.flex-text-sub-9 span img {
+		flex: 1 0 10%;
+		max-width: 65px;
+		margin: 5px;
+		padding: 7px;
+	}
+
 	div.flex-text-sub-6 span {
 		justify-content: space-between;
 		width: 100%;
@@ -705,6 +718,20 @@ div.flex-text-sub-9 {
 	div.flex-text-sub-4,
 	div.flex-text-sub-5 {
 		padding: 30px;
+	}
+
+	div.flex-text-sub-2 span img {
+		flex: 1 0 10%;
+		max-width: 60px;
+		margin: 2px;
+		padding: 5px;
+	}
+
+	div.flex-text-sub-9 span img {
+		flex: 1 0 10%;
+		max-width: 60px;
+		margin: 2px;
+		padding: 5px;
 	}
 }
 
