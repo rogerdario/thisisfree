@@ -230,19 +230,34 @@ div.flex-img-2 {
 	order: 1;
 }
 
-div.flex-text-sub-2 span, div.flex-text-sub-9 span {
+div.flex-text-sub-2 span {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 90%;
+	width: 80%;
 	height: 100%;
 }
 
-div.flex-text-sub-2 span img, div.flex-text-sub-9 span img {
-	max-width: 80px;
-	max-height: 50%;
-	padding: 0 10px 15px 10px;
+div.flex-text-sub-2 span img {
+	flex: 1 0 10%;
+	max-width: 70px;
+	margin: 5px;
+}
+
+div.flex-text-sub-9 span {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100%;
+}
+
+div.flex-text-sub-9 span img {
+	flex: 1 0 10%;
+	max-width: 70px;
+	margin: 5px;
 }
 
 /* SECTION 3 */
@@ -354,21 +369,22 @@ div.flex-text-sub-6 span {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 92%;
+	width: 90%;
 	height: 100%;
 }
 
 div.flex-text-sub-6 span img.square {
-	max-height: 70px;
-	max-width: 70px;
-	padding: 0 15px 15px 15px;
+	flex: 1 0 20%;
+	max-width: 30px;
+	margin: 5px;
 }
 
 div.flex-text-sub-6 span img.horiz {
-	max-width: 130px;
-	max-height: 50px;
-	padding: 0 15px 15px 15px;
+	flex: 1 0 20%;
+	max-width: 100px;
+	margin: 5px;
 }
+
 
 /* REMAINING MODULES */
 
@@ -498,20 +514,19 @@ div.flex-text-sub-9 {
 
 	div.flex-text-sub-6 span {
 		justify-content: flex-start;
-		align-items: center;
 		width: 100%;
 	}
 
 	div.flex-text-sub-6 span img.square {
-		max-height: 40px;
-		max-width: 40px;
-		padding: 0 10px 15px 10px;
+		flex: 1 0 15%;
+		max-width: 22px;
+		margin: 4px;
 	}
 
 	div.flex-text-sub-6 span img.horiz {
-		max-width: 75px;
-		max-height: 50px;
-		padding: 0 10px 15px 10px;
+		flex: 1 0 25%;
+		max-width: 45px;
+		margin: 4px;
 	}
 }
 
@@ -557,32 +572,24 @@ div.flex-text-sub-9 {
 		max-height: 35px;
 	}
 
-	div.flex-text-sub-6 span {
-		justify-content: flex-start;
-		align-items: center;
+	div.flex-text-sub-2 span {
 		width: 100%;
 	}
 
-	div.flex-text-sub-6 span img.square {
-		max-height: 30px;
-		max-width: 25px;
-		padding: 5px;
+	div.flex-text-sub-2 span img {
+		flex: 1 0 15%;
+		max-width: 50px;
+		margin: 5px;
 	}
 
-	div.flex-text-sub-6 span img.horiz {
-		max-width: 60px;
-		max-height: 35px;
-		padding: 5px;
-	}
-
-	div.flex-text-sub-2 span, div.flex-text-sub-9 span {
+	div.flex-text-sub-9 span {
 		width: 100%;
 	}
 
-	div.flex-text-sub-2 span img, div.flex-text-sub-9 span img {
-		max-width: 60px;
-		max-height: 50%;
-		padding: 0 10px 15px 10px;
+	div.flex-text-sub-9 span img {
+		flex: 1 0 15%;
+		max-width: 50px;
+		margin: 5px;
 	}
 }
 
@@ -628,13 +635,6 @@ div.flex-text-sub-9 {
 		max-height: 100%;
 	}
 
-/* 	div.flex-text-sub-1,
-	div.flex-text-sub-2,
-	div.flex-text-sub-3,
-	div.flex-text-sub-4 {
-		background: #fff;
-	} */
-
 	div.flex-text-sub-1,
 	div.flex-text-sub-3,
 	div.flex-text-sub-5 {
@@ -662,22 +662,19 @@ div.flex-text-sub-9 {
 
 	div.flex-text-sub-6 span {
 		justify-content: space-between;
-		align-items: center;
 		width: 100%;
 	}
 
 	div.flex-text-sub-6 span img.square {
-		max-height: 30px;
-		max-width: 25px;
-		padding: 0;
-		margin: 10px;
+		flex: 1 0 20%;
+		max-width: 30px;
+		margin: 5px;
 	}
 
 	div.flex-text-sub-6 span img.horiz {
-		max-width: 60px;
-		max-height: 35px;
-		padding: 0;
-		margin: 10px;
+		flex: 1 0 20%;
+		max-width: 100px;
+		margin: 5px;
 	}
 }
 
