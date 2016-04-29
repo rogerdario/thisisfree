@@ -14,13 +14,6 @@ header.brands {
 	background: linear-gradient(to top, #e2ece5 0%, #e2ece5 30%, #fff 30%, #fff 100%);
 }
 
-header.creators {
-	width: 100%;
-	height: 100%;
-	margin-bottom: 0;
-	background: #fff;
-}
-
 header div.header-text-sub {
 	width: 60%;
 	padding: 180px 0 5% 0;
@@ -45,9 +38,6 @@ p.join-us-btn {
 
 /* MODULE - GLOBAL */
 
-div.flex-text p.subtitle {
-	height: 100%;
-}
 
 ul.progress {
 	width: 200px;
@@ -103,12 +93,16 @@ div.flex-img-10 {
 
 div.scroll-next {
 	display: flex;
-	height: 20px;
+	align-items: flex-end;
 	width: 100%;
 }
 
 div.scroll-next a {
 	border: none;
+}
+
+div.scroll-next a img {
+	width: 30px;
 }
 
 div.scroll-next a:hover{
@@ -192,7 +186,6 @@ div.flex-text-sub-1 span {
 	justify-content: space-between;
 	align-items: center;
 	width: 80%;
-	height: 100%;
 }
 
 div.flex-text-sub-1 span a img {
@@ -243,7 +236,6 @@ div.flex-text-sub-2 span {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 100%;
 }
 
 div.flex-text-sub-2 span img {
@@ -258,7 +250,6 @@ div.flex-text-sub-9 span {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 100%;
 }
 
 div.flex-text-sub-9 span img {
@@ -377,18 +368,19 @@ div.flex-text-sub-6 span {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 90%;
-	height: 100%;
 }
 
 div.flex-text-sub-6 span img.square {
 	flex: 1 0 20%;
 	max-width: 30px;
+	max-height: 30px;
 	margin: 5px;
 }
 
 div.flex-text-sub-6 span img.horiz {
 	flex: 1 0 20%;
-	max-width: 100px;
+	max-height: 30px;
+	max-width: 90px;
 	margin: 5px;
 }
 
@@ -563,6 +555,10 @@ ul.chapters-jobs li {
 		flex: 1 0 25%;
 		max-width: 45px;
 		margin: 4px;
+	}
+
+	div.scroll-next {
+		align-items: center;
 	}
 }
 
