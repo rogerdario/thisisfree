@@ -240,11 +240,11 @@ div.flex-text-sub-2 span {
 
 div.flex-text-sub-2 span img {
 	flex: 1 0 15%;
-	max-width: 70px;
+	max-width: 90px;
 	padding: 10px;
 }
 
-div.flex-text-sub-9 span {
+div.flex-text-sub-7 span {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -252,9 +252,9 @@ div.flex-text-sub-9 span {
 	width: 100%;
 }
 
-div.flex-text-sub-9 span img {
+div.flex-text-sub-7 span img {
 	flex: 1 0 15%;
-	max-width: 70px;
+	max-width: 90px;
 	padding: 10px;
 }
 
@@ -362,7 +362,7 @@ div.flex-text-sub-5 p {
 
 /* SECTION 6 */
 
-div.flex-text-sub-6 span {
+div.flex-text-sub-9 span {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -370,17 +370,17 @@ div.flex-text-sub-6 span {
 	width: 90%;
 }
 
-div.flex-text-sub-6 span img.square {
+div.flex-text-sub-9 span img.square {
 	flex: 1 0 20%;
-	max-width: 30px;
-	max-height: 30px;
+	max-width: 33px;
+	max-height: 33px;
 	margin: 5px;
 }
 
-div.flex-text-sub-6 span img.horiz {
+div.flex-text-sub-9 span img.horiz {
 	flex: 1 0 20%;
-	max-height: 30px;
-	max-width: 90px;
+	max-height: 33px;
+	max-width: 93px;
 	margin: 5px;
 }
 
@@ -540,18 +540,18 @@ ul.chapters-jobs li {
 		width: 100%;
 	}
 
-	div.flex-text-sub-6 span {
+	div.flex-text-sub-9 span {
 		justify-content: flex-start;
 		width: 100%;
 	}
 
-	div.flex-text-sub-6 span img.square {
+	div.flex-text-sub-9 span img.square {
 		flex: 1 0 15%;
 		max-width: 22px;
 		margin: 4px;
 	}
 
-	div.flex-text-sub-6 span img.horiz {
+	div.flex-text-sub-9 span img.horiz {
 		flex: 1 0 25%;
 		max-width: 45px;
 		margin: 4px;
@@ -614,11 +614,11 @@ ul.chapters-jobs li {
 		margin: 5px;
 	}
 
-	div.flex-text-sub-9 span {
+	div.flex-text-sub-7 span {
 		width: 100%;
 	}
 
-	div.flex-text-sub-9 span img {
+	div.flex-text-sub-7 span img {
 		flex: 1 0 15%;
 		max-width: 50px;
 		margin: 5px;
@@ -698,25 +698,25 @@ ul.chapters-jobs li {
 		margin: 7px;
 	}
 
-	div.flex-text-sub-9 span img {
+	div.flex-text-sub-7 span img {
 		flex: 1 0 10%;
 		max-width: 65px;
 		margin: 5px;
 		padding: 7px;
 	}
 
-	div.flex-text-sub-6 span {
+	div.flex-text-sub-9 span {
 		justify-content: space-between;
 		width: 100%;
 	}
 
-	div.flex-text-sub-6 span img.square {
+	div.flex-text-sub-9 span img.square {
 		flex: 1 0 20%;
 		max-width: 30px;
 		margin: 5px;
 	}
 
-	div.flex-text-sub-6 span img.horiz {
+	div.flex-text-sub-9 span img.horiz {
 		flex: 1 0 20%;
 		max-width: 100px;
 		margin: 5px;
@@ -759,7 +759,7 @@ ul.chapters-jobs li {
 		padding: 5px;
 	}
 
-	div.flex-text-sub-9 span img {
+	div.flex-text-sub-7 span img {
 		flex: 1 0 10%;
 		max-width: 60px;
 		margin: 2px;

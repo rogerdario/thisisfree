@@ -25,6 +25,7 @@ img {
 /* TYPOGRAPHY */
 
 @import url("//hello.myfonts.net/count/30f762");
+@import url("//hello.myfonts.net/count/310a3c");
   
 @font-face {
 	font-family: 'AvenirLTStd-Heavy';
@@ -51,6 +52,15 @@ img {
 	     url('../fonts/30F762_2_0.woff2') format('woff2'),
 	     url('webfonts/30F762_2_0.woff') format('woff'),
 	     url('../fonts/30F762_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AvenirLTStd-HeavyOblique';
+	src: url('webfonts/310A3C_0_0.eot');
+	src: url('webfonts/310A3C_0_0.eot?#iefix') format('embedded-opentype'),
+	     url('webfonts/310A3C_0_0.woff2') format('woff2'),
+	     url('webfonts/310A3C_0_0.woff') format('woff'),
+	     url('webfonts/310A3C_0_0.ttf') format('truetype');
 }
 
 /* BUTTONS / LINKS */
@@ -242,6 +252,13 @@ header div.header-text {
 
 header div.header-text h1 {
 	font-family: "AvenirLTStd-Heavy", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 4.5rem;
+	line-height: 5rem;
+}
+
+header div.header-text h1 span.ital {
+	font-family: "AvenirLTStd-HeavyOblique", "Helvetica", sans-serif;
 	font-weight: normal;
 	font-size: 4.5rem;
 	line-height: 5rem;
@@ -509,7 +526,7 @@ div.footer-col span a:hover {
 }
 
 div.footer-social {
-	width: 45%;
+	width: 40%;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -618,6 +635,11 @@ div.footer-social img.social {
 	}
 
 	header div.header-text h1 {
+		font-size: 2.75rem;
+		line-height: 3.25rem;
+	}
+
+	header div.header-text h1 span.ital {
 		font-size: 2.75rem;
 		line-height: 3.25rem;
 	}
