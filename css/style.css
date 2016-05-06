@@ -50,17 +50,17 @@ img {
 	src: url('../fonts/30F762_2_0.eot');
 	src: url('../fonts/30F762_2_0.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/30F762_2_0.woff2') format('woff2'),
-	     url('webfonts/30F762_2_0.woff') format('woff'),
+	     url('../fonts/30F762_2_0.woff') format('woff'),
 	     url('../fonts/30F762_2_0.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'AvenirLTStd-HeavyOblique';
-	src: url('webfonts/310A3C_0_0.eot');
-	src: url('webfonts/310A3C_0_0.eot?#iefix') format('embedded-opentype'),
-	     url('webfonts/310A3C_0_0.woff2') format('woff2'),
-	     url('webfonts/310A3C_0_0.woff') format('woff'),
-	     url('webfonts/310A3C_0_0.ttf') format('truetype');
+	src: url('../fonts/310A3C_0_0.eot');
+	src: url('../fonts/310A3C_0_0.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/310A3C_0_0.woff2') format('woff2'),
+	     url('../fonts/310A3C_0_0.woff') format('woff'),
+	     url('../fonts//310A3C_0_0.ttf') format('truetype');
 }
 
 /* BUTTONS / LINKS */
@@ -343,7 +343,6 @@ div.flex-img img {
 	flex-shrink: 0;
 	min-width: 880px;
 	height: 100%;
-	max-height: 720px;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     mix-blend-mode: screen;
